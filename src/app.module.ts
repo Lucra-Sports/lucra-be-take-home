@@ -2,9 +2,9 @@ import 'reflect-metadata';
 import { join } from 'node:path';
 import { Module } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
-import { GamesController } from './games.controller';
-import { GamesService } from './games.service';
-import { Game, GameCell } from './entities';
+import { GamesController } from './games/games.controller';
+import { GamesService } from './games/games.service';
+import { Game, GameCell } from './games/entities';
 
 @Module({
   imports: [
@@ -15,7 +15,7 @@ import { Game, GameCell } from './entities';
       username: 'local',
       password: 'local',
       database: 'local',
-      entities: [join(__dirname, 'entities/*')],
+      entities: [join(__dirname, 'games/entities/*')],
       synchronize: true,
     }),
     TypeOrmModule.forFeature([Game, GameCell]),
