@@ -1029,9 +1029,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nestjs/common@npm:10.4.21":
-  version: 10.4.21
-  resolution: "@nestjs/common@npm:10.4.21"
+"@nestjs/common@npm:10.4.22":
+  version: 10.4.22
+  resolution: "@nestjs/common@npm:10.4.22"
   dependencies:
     file-type: "npm:20.4.1"
     iterare: "npm:1.2.1"
@@ -1047,13 +1047,13 @@ __metadata:
       optional: true
     class-validator:
       optional: true
-  checksum: 10c0/9b27f35489765677925bf49d79b7e36f29b9647d9e4e05f19d6d3e8383d8157624b7b8713b03a71d5196ca453cbd5b1d01bebc9e8274e06dc7531ef741a4eccf
+  checksum: 10c0/6b31315b173361af069ef7b79023f25eb1b8c0ed95cf453339b69a967c923961e56b2976493421ff7f055feb46f500ed42497dcf7c9a599731c9cf4c504e84d7
   languageName: node
   linkType: hard
 
-"@nestjs/core@npm:10.4.21":
-  version: 10.4.21
-  resolution: "@nestjs/core@npm:10.4.21"
+"@nestjs/core@npm:10.4.22":
+  version: 10.4.22
+  resolution: "@nestjs/core@npm:10.4.22"
   dependencies:
     "@nuxtjs/opencollective": "npm:0.3.2"
     fast-safe-stringify: "npm:2.1.1"
@@ -1075,15 +1075,15 @@ __metadata:
       optional: true
     "@nestjs/websockets":
       optional: true
-  checksum: 10c0/75a846687d86ac5e5ef7b2934a156e9f4ba2532c529026470585a89bbd0fc3e5ad5ebdfae942ea3a7b2ecf90e3ec9887c388da8a0bcbed9083befe1eb88e78db
+  checksum: 10c0/026393ca7d09bc80f2a2b2f0813092a9af964f2f4ecfc6a01a6cc89e8dfd107d0df8c839d373c53a9b300db954b81ed2967a56dc289785d98d897090ca66268e
   languageName: node
   linkType: hard
 
-"@nestjs/platform-express@npm:10.4.21":
-  version: 10.4.21
-  resolution: "@nestjs/platform-express@npm:10.4.21"
+"@nestjs/platform-express@npm:10.4.22":
+  version: 10.4.22
+  resolution: "@nestjs/platform-express@npm:10.4.22"
   dependencies:
-    body-parser: "npm:1.20.3"
+    body-parser: "npm:1.20.4"
     cors: "npm:2.8.5"
     express: "npm:4.22.1"
     multer: "npm:2.0.2"
@@ -1091,7 +1091,7 @@ __metadata:
   peerDependencies:
     "@nestjs/common": ^10.0.0
     "@nestjs/core": ^10.0.0
-  checksum: 10c0/28ba95fce4d0308931bcbf60f5f334a4da28f32fe345403c7bea219d52883eff47a8e6a6568aeca0c06c935263df06429193dfbf5fa41c2f6051b7df4991c84b
+  checksum: 10c0/7bddcba7b66d19f14fe4c15f21b21dd819fe0340fa57db35dcdcf7fb344ce682aa494363b182574885413d22c7fbee5fcef6f9d2189f419d4983cb71be1f4d28
   languageName: node
   linkType: hard
 
@@ -1125,9 +1125,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nestjs/testing@npm:10.4.21":
-  version: 10.4.21
-  resolution: "@nestjs/testing@npm:10.4.21"
+"@nestjs/testing@npm:10.4.22":
+  version: 10.4.22
+  resolution: "@nestjs/testing@npm:10.4.22"
   dependencies:
     tslib: "npm:2.8.1"
   peerDependencies:
@@ -1140,7 +1140,7 @@ __metadata:
       optional: true
     "@nestjs/platform-express":
       optional: true
-  checksum: 10c0/eda8b25f08d2f03881506a0fe0f79876129ebcfa4ed46daf70f00971c61abd827d0fb691a81de5f70f653dba9d06efeb53a2c81ec28ba1d7af3d85047d122604
+  checksum: 10c0/cb3d0f3997b1c08ef7263f25beff0f0ba8af9f718361cede5c2b0a72ec0c3baadba8fcc92ec18c735171550b9e950c9e66b43e81ea62273c1ca6c82aa54e9715
   languageName: node
   linkType: hard
 
@@ -2317,27 +2317,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"body-parser@npm:1.20.3":
-  version: 1.20.3
-  resolution: "body-parser@npm:1.20.3"
-  dependencies:
-    bytes: "npm:3.1.2"
-    content-type: "npm:~1.0.5"
-    debug: "npm:2.6.9"
-    depd: "npm:2.0.0"
-    destroy: "npm:1.2.0"
-    http-errors: "npm:2.0.0"
-    iconv-lite: "npm:0.4.24"
-    on-finished: "npm:2.4.1"
-    qs: "npm:6.13.0"
-    raw-body: "npm:2.5.2"
-    type-is: "npm:~1.6.18"
-    unpipe: "npm:1.0.0"
-  checksum: 10c0/0a9a93b7518f222885498dcecaad528cf010dd109b071bf471c93def4bfe30958b83e03496eb9c1ad4896db543d999bb62be1a3087294162a88cfa1b42c16310
-  languageName: node
-  linkType: hard
-
-"body-parser@npm:~1.20.3":
+"body-parser@npm:1.20.4, body-parser@npm:~1.20.3":
   version: 1.20.4
   resolution: "body-parser@npm:1.20.4"
   dependencies:
@@ -2467,7 +2447,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"bytes@npm:3.1.2, bytes@npm:~3.1.2":
+"bytes@npm:~3.1.2":
   version: 3.1.2
   resolution: "bytes@npm:3.1.2"
   checksum: 10c0/76d1c43cbd602794ad8ad2ae94095cddeb1de78c5dddaa7005c51af10b0176c69971a6d88e805a90c2b6550d76636e43c40d8427a808b8645ede885de4a0358e
@@ -4284,19 +4264,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"http-errors@npm:2.0.0":
-  version: 2.0.0
-  resolution: "http-errors@npm:2.0.0"
-  dependencies:
-    depd: "npm:2.0.0"
-    inherits: "npm:2.0.4"
-    setprototypeof: "npm:1.2.0"
-    statuses: "npm:2.0.1"
-    toidentifier: "npm:1.0.1"
-  checksum: 10c0/fc6f2715fe188d091274b5ffc8b3657bd85c63e969daa68ccb77afb05b071a4b62841acb7a21e417b5539014dff2ebf9550f0b14a9ff126f2734a7c1387f8e19
-  languageName: node
-  linkType: hard
-
 "http-errors@npm:~2.0.0, http-errors@npm:~2.0.1":
   version: 2.0.1
   resolution: "http-errors@npm:2.0.1"
@@ -4337,7 +4304,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"iconv-lite@npm:0.4.24, iconv-lite@npm:^0.4.24, iconv-lite@npm:~0.4.24":
+"iconv-lite@npm:^0.4.24, iconv-lite@npm:~0.4.24":
   version: 0.4.24
   resolution: "iconv-lite@npm:0.4.24"
   dependencies:
@@ -4415,7 +4382,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"inherits@npm:2, inherits@npm:2.0.4, inherits@npm:^2.0.1, inherits@npm:^2.0.3, inherits@npm:^2.0.4, inherits@npm:~2.0.4":
+"inherits@npm:2, inherits@npm:^2.0.1, inherits@npm:^2.0.3, inherits@npm:^2.0.4, inherits@npm:~2.0.4":
   version: 2.0.4
   resolution: "inherits@npm:2.0.4"
   checksum: 10c0/4e531f648b29039fb7426fb94075e6545faa1eb9fe83c29f0b6d9e7263aceb4289d2d4557db0d428188eeb449cc7c5e77b0a0b2c4e248ff2a65933a0dee49ef2
@@ -5371,11 +5338,11 @@ __metadata:
     "@eslint/eslintrc": "npm:3.3.3"
     "@eslint/js": "npm:9.23.0"
     "@nestjs/cli": "npm:10.4.9"
-    "@nestjs/common": "npm:10.4.21"
-    "@nestjs/core": "npm:10.4.21"
-    "@nestjs/platform-express": "npm:10.4.21"
+    "@nestjs/common": "npm:10.4.22"
+    "@nestjs/core": "npm:10.4.22"
+    "@nestjs/platform-express": "npm:10.4.22"
     "@nestjs/schematics": "npm:10.2.3"
-    "@nestjs/testing": "npm:10.4.21"
+    "@nestjs/testing": "npm:10.4.22"
     "@nestjs/typeorm": "npm:10.0.2"
     "@types/express": "npm:4.17.25"
     "@types/jest": "npm:29.5.14"
@@ -5884,7 +5851,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"on-finished@npm:2.4.1, on-finished@npm:~2.4.1":
+"on-finished@npm:~2.4.1":
   version: 2.4.1
   resolution: "on-finished@npm:2.4.1"
   dependencies:
@@ -6374,7 +6341,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"qs@npm:6.13.0, qs@npm:^6.11.0":
+"qs@npm:^6.11.0":
   version: 6.13.0
   resolution: "qs@npm:6.13.0"
   dependencies:
@@ -6412,18 +6379,6 @@ __metadata:
   version: 1.2.1
   resolution: "range-parser@npm:1.2.1"
   checksum: 10c0/96c032ac2475c8027b7a4e9fe22dc0dfe0f6d90b85e496e0f016fbdb99d6d066de0112e680805075bd989905e2123b3b3d002765149294dce0c1f7f01fcc2ea0
-  languageName: node
-  linkType: hard
-
-"raw-body@npm:2.5.2":
-  version: 2.5.2
-  resolution: "raw-body@npm:2.5.2"
-  dependencies:
-    bytes: "npm:3.1.2"
-    http-errors: "npm:2.0.0"
-    iconv-lite: "npm:0.4.24"
-    unpipe: "npm:1.0.0"
-  checksum: 10c0/b201c4b66049369a60e766318caff5cb3cc5a900efd89bdac431463822d976ad0670912c931fdbdcf5543207daf6f6833bca57aa116e1661d2ea91e12ca692c4
   languageName: node
   linkType: hard
 
@@ -6947,13 +6902,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"statuses@npm:2.0.1":
-  version: 2.0.1
-  resolution: "statuses@npm:2.0.1"
-  checksum: 10c0/34378b207a1620a24804ce8b5d230fea0c279f00b18a7209646d5d47e419d1cc23e7cbf33a25a1e51ac38973dc2ac2e1e9c647a8e481ef365f77668d72becfd0
-  languageName: node
-  linkType: hard
-
 "statuses@npm:~2.0.1, statuses@npm:~2.0.2":
   version: 2.0.2
   resolution: "statuses@npm:2.0.2"
@@ -7267,7 +7215,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"toidentifier@npm:1.0.1, toidentifier@npm:~1.0.1":
+"toidentifier@npm:~1.0.1":
   version: 1.0.1
   resolution: "toidentifier@npm:1.0.1"
   checksum: 10c0/93937279934bd66cc3270016dd8d0afec14fb7c94a05c72dc57321f8bd1fa97e5bea6d1f7c89e728d077ca31ea125b78320a616a6c6cd0e6b9cb94cb864381c1
@@ -7664,7 +7612,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"unpipe@npm:1.0.0, unpipe@npm:~1.0.0":
+"unpipe@npm:~1.0.0":
   version: 1.0.0
   resolution: "unpipe@npm:1.0.0"
   checksum: 10c0/193400255bd48968e5c5383730344fbb4fa114cdedfab26e329e50dd2d81b134244bb8a72c6ac1b10ab0281a58b363d06405632c9d49ca9dfd5e90cbd7d0f32c
