@@ -23,5 +23,4 @@ import { Game, GameCell } from './entities';
   controllers: [GamesController],
   providers: [GamesService],
 })
-
 export class AppModule {}
