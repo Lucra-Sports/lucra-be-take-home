@@ -1,4 +1,15 @@
+/**
+ * GamesController - API Endpoints for Minesweeper
+ *
+ * Implements the REST API interface for the game:
+ * - POST /games: Creates a new game with customizable grid size and mine density.
+ * - GET /games: Returns a lightweight list of all games (for browsing).
+ * - GET /games/:id: Returns full game state including all cell data (for playing).
+ *
+ * Relies on GamesService for core logic and DTOs for input validation.
+ */
 import {
+  Body,
   Controller,
   Get,
   NotFoundException,
@@ -6,6 +17,7 @@ import {
   Post,
 } from '@nestjs/common';
 import { GamesService } from './games.service';
+import { CreateGameDto } from './dto';
 
 @Controller('games')
 export class GamesController {
@@ -13,8 +25,7 @@ export class GamesController {
 
   @Get()
   async getAll() {
-    // TODO: Implement get all games logic here
-    return [];
+    return this.gameService.findAll();
   }
 
   @Get(':id')
@@ -29,8 +40,7 @@ export class GamesController {
   }
 
   @Post()
-  create() {
-    // TODO: Implement game creation logic here
-    throw new Error('Not implemented');
+  async create(@Body() createGameDto: CreateGameDto) {
+    return this.gameService.createGame(createGameDto);
   }
 }
