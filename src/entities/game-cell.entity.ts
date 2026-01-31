@@ -4,6 +4,8 @@ import {
   PrimaryGeneratedColumn,
   ManyToOne,
   JoinColumn,
+  Index,
+  Unique,
 } from 'typeorm';
 import { Game } from './game.entity';
 
@@ -15,6 +17,9 @@ export enum CellStatus {
 }
 
 @Entity({ name: 'game_cells' })
+@Unique('game_cells_game_coord_unique', ['game', 'xCoordinate', 'yCoordinate'])
+@Index('game_cells_game_coord_idx', ['game', 'xCoordinate', 'yCoordinate'])
+@Index('game_cells_game_status_idx', ['game', 'status'])
 export class GameCell {
   @PrimaryGeneratedColumn('uuid')
   id: string;

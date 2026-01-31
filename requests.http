@@ -1,0 +1,74 @@
+### List games
+GET http://localhost:3000/games
+
+### List games with pagination
+GET http://localhost:3000/games?limit=10&offset=0
+
+### Create a game
+POST http://localhost:3000/games
+Content-Type: application/json
+
+{
+  "rows": 8,
+  "columns": 8
+}
+
+### Create a game (minimum size)
+POST http://localhost:3000/games
+Content-Type: application/json
+
+{
+  "rows": 2,
+  "columns": 2
+}
+
+### Create a game (maximum size)
+POST http://localhost:3000/games
+Content-Type: application/json
+
+{
+  "rows": 100,
+  "columns": 100
+}
+
+### Create a game (invalid size)
+POST http://localhost:3000/games
+Content-Type: application/json
+
+{
+  "rows": 1,
+  "columns": 2
+}
+
+### Get a game by id (replace UUID)
+GET http://localhost:3000/games/440037e3-f3b3-4e59-93cd-27ab2f0ab142
+
+### Reveal a cell
+POST http://localhost:3000/games/440037e3-f3b3-4e59-93cd-27ab2f0ab142/moves
+Content-Type: application/json
+
+{
+  "x": 0,
+  "y": 0,
+  "action": "REVEAL"
+}
+
+### Flag a cell
+POST http://localhost:3000/games/440037e3-f3b3-4e59-93cd-27ab2f0ab142/moves
+Content-Type: application/json
+
+{
+  "x": 0,
+  "y": 0,
+  "action": "FLAG"
+}
+
+### Unflag a cell
+POST http://localhost:3000/games/440037e3-f3b3-4e59-93cd-27ab2f0ab142/moves
+Content-Type: application/json
+
+{
+  "x": 0,
+  "y": 0,
+  "action": "UNFLAG"
+}
