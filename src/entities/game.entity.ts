@@ -2,7 +2,7 @@ import { Entity, Column, PrimaryGeneratedColumn, OneToMany } from 'typeorm';
 import { GameCell } from './game-cell.entity';
 
 export enum GameStatus {
-  Pending = 'PENDING',
+  Active = 'ACTIVE',
   Cleared = 'CLEARED',
   Detonated = 'DETONATED',
 }
@@ -16,7 +16,7 @@ export class Game {
     type: 'enum',
     enum: GameStatus,
     enumName: 'permission_enum',
-    default: GameStatus.Pending,
+    default: GameStatus.Active,
   })
   status: GameStatus;
 
